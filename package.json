@@ -1,0 +1,31 @@
+{ "name" : "hdrgrab"
+, "description" : "HTTP Header Grabber"
+, "keywords" : [ "sniffer", "HTTP", "headers" ]
+, "version" : "0.1.0"
+, "homepage" : "https://github.com/mnot/hdrgrab"
+, "author" : "Mark Nottingham <mnot@mnot.net> (http://www.mnot.net/)"
+, "contributors" :
+  [ 
+  ]
+, "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/mnot/hdrgrab.git"
+  }
+, "bugs" :
+  { "web" : "http://github.com/mnot/hdrgrab/issues"
+  }
+, "bin" : { "hdrgrab" : "./hdrgrab.js" }
+, "engines" : 
+  { "node" : ">=0.4.0"
+  , "npm" : ">=0.2.18"
+  }
+, "dependencies" : 
+  { "pcap" : ">=0.2.8"
+  , "optimist" : ">=0.1.5"
+  }
+, "licenses" :
+  [ { "type" : "MIT"
+    , "url" : "http://github.com/mnot/hdrgrab/raw/master/LICENSE"
+    }
+  ]
+}
