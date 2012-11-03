@@ -29,21 +29,25 @@ Start it up like this:
 
   > hdrgrab
 
-which will sniff on port 80 and dump headers into the current directory.
+which will sniff on port 80 and output to "grab.har".
 
-  > hdrgrab 8000
+  > hdrgrab -o foo.har
+
+will output to the file "foo.har"
+
+  > hdrgrab -p 8000
 
 will sniff on port 80.
 
 On some operating systems, you may need to specify the interface to listen
 on. For example:
 
-  > hdrgrab 8000 eth0
+  > hdrgrab -p 8000 -i eth0
   
 and in some cases, you may need permission to listen to the device, making 
 the appropriate command line something like:
 
-  > sudo hdrgrab 8000 eth0
+  > sudo hdrgrab -p 8000 -i eth0 -o foo.har
 
 
 

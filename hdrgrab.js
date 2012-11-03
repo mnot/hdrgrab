@@ -26,7 +26,7 @@ var hdrgrab = {
   pcap_session: undefined,
   drop_watcher: undefined,
   err: undefined,
-  outfile_name: "foo.har",
+  outfile_name: "grab.har",
 
   clear: function () {
     var self = this
@@ -241,15 +241,20 @@ var hdrgrab = {
   }
 }
 
+// output file
+var outfile = argv.o
+if (outfile) {
+  hdrgrab.outfile_name = outfile  
+}
 
 // port to listen to 
-var port = parseInt(argv._[0], 10)
+var port = argv.p
 if (port) {
-  hdrgrab.sniff_port = port
+  hdrgrab.sniff_port = parseInt(port, 10)
 }
 
 // device to snoop on
-var device = argv._[1]
+var device = argv.i
 if (device) {
   hdrgrab.device = device
 }
