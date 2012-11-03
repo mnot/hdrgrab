@@ -1,7 +1,7 @@
 { "name" : "hdrgrab"
 , "description" : "HTTP Header Grabber"
 , "keywords" : [ "sniffer", "HTTP", "headers" ]
-, "version" : "0.1.0"
+, "version" : "0.2.0"
 , "homepage" : "https://github.com/mnot/hdrgrab"
 , "author" : "Mark Nottingham <mnot@mnot.net> (http://www.mnot.net/)"
 , "contributors" :

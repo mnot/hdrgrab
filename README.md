@@ -1,16 +1,8 @@
 
 # hdrgrab
 
-hdrgrab sniffs HTTP headers off the wire and writes them into files into
-the current working directory.
-
-Requests and responses are written into separate files, with '-req' and 
-'-res' identifying each type, respectively. 
-
-Each file contains the sets of header fields, separated by blank lines.
-
-Note that hdrgrab makes some effort to remove connection (hop-by-hop) headers,
-but does not case normalise their names, or manipulate their values. 
+hdrgrab sniffs HTTP messages off the wire and writes them into a 
+[HAR](http://www.softwareishard.com/blog/har-12-spec/) file.
 
 
 ## Installing hdrgrab
@@ -25,8 +17,8 @@ Then, hdrgrab can be installed with npm like this:
 which will install dependencies automatically. 
 
 Under the covers, hdrgrab relies upon
- [node_pcap](https://github.com/mranney/node_pcap/), 
- [optimist](https://github.com/substack/node-optimist), and 
+ [node_pcap](https://github.com/mranney/node_pcap/) and
+ [optimist](https://github.com/substack/node-optimist). 
 
 
 ## Using hdrgrab
