@@ -18,7 +18,7 @@ var hdrgrab = {
         version: "1.2",
         creator: {
           name: "hdrgrab",
-          version: "0.2"
+          version: "0.2.1"
         },
         entries: []
     }
